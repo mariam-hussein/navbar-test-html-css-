@@ -29,6 +29,7 @@
 	margin-top: -8px;
 }
 
+/*Strip the ul of padding and list styling*/
 ul{
 	position:absolute;
 }
@@ -38,12 +39,14 @@ ul{
 	top: 25px;
 }
 
+/*Create a horizontal list with spacing*/
 li{
 	float: left;
 	margin-right: 1px;
 	list-style:none;
 }
 
+/*Style for menu links*/
 li a{
 	display:block;
 	text-decoration: none;
@@ -55,22 +58,25 @@ li a{
 	text-align:center;
 	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 	font-size:18px;
-	letter-spacing:1px;
-	
+	letter-spacing:1px;	
 }
 
+/*Hover state for top level links*/
 li a:hover{
 	background-color:rgba(61,189,224,1.00);
 }
 
+/*Hide dropdown links until they are needed*/
 li ul{
 	display:none;
 }
 
+/*Make dropdown links vertical*/
 li ul li{              /* or .hidden li{ .... */
 	float: none;
 }
 
+/*Prevent text wrapping*/
 li ul li a {
 	display:block;
     width: auto;
@@ -80,15 +86,18 @@ li ul li a {
     padding: 0 20px;
 }
 
+/*Display the dropdown on hover*/
 ul li a:hover + .hidden, .hidden:hover {    /* or ul li a:hover + ul, ul:hover */
     display: block;
 }
 
+/*Style for dropdown links*/
 li:hover ul a {
     background: #f3f3f3;
     color: #2f3036;
 }
 
+/*Hover state for dropdown links*/
 li:hover ul a:hover {
     background: rgba(61,189,224,1.00);
     color: #fff;
@@ -110,6 +119,7 @@ button{
 	float: right;
 	margin-top: 15px;
 }
+
 button:hover{
 	background: rgba(61,189,224,1.00);
     color: #fff;
